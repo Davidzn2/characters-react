@@ -12,18 +12,12 @@ function Home() {
     return (
         <>
             <Header />
-            <h2>Hola</h2>
-            {/* <li>
-                <Link to="/character/cr7">Cristiano Ronaldo</Link>
-            </li>
-            <li>
-                <Link to="/character/messi">Lionel Messi</Link>
-            </li> */}
+            <h2>Lista de personajes de Rick And Morty</h2>
             <ul>
                 {
                     characters.map((character) => {
                         return (
-                            <li> 
+                            <li>
                                 <Link to={`/character/${character.id}`}>{character.name}</Link>
                             </li>
                         )
